@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calendário de Remédios</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="calendar-container">
+    <h1>Calendário de Remédios</h1>
+    <div class="month-navigation">
+      <button id="prev-month" class="nav-button">◀</button>
+      <h2 id="month-display">Janeiro 2024</h2>
+      <button id="next-month" class="nav-button">▶</button>
+    </div>
+    <div id="calendar" class="calendar"></div>
+    <div class="medicine-form">
+      <h3>Adicionar Remédio</h3>
+      <input type="text" id="medicine-name" placeholder="Nome do remédio">
+      <button id="save-button">Salvar</button>
+      <p id="selected-day">Dia selecionado: Nenhum</p>
+    </div>
+    <div class="medicine-list">
+      <h3>Remédios Adicionados</h3>
+      <ul id="medicine-list"></ul>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
